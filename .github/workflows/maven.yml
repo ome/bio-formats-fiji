@@ -20,3 +20,5 @@ jobs:
           java-version: 1.8
       - name: Deploy
         run: ./deploy.sh
+        env:
+          WIKI_UPLOAD_PASS: ${{ secrets.BF_WIKI_UPLOAD_PASS }}
