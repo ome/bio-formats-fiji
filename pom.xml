@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ome</groupId>
-  <version>6.8.0</version>
+  <version>6.9.0-SNAPSHOT</version>
   <artifactId>dependency_copy</artifactId>
 
   <properties>
     <fiji.home>Fiji.app</fiji.home>
-    <bioformats.version>6.8.0</bioformats.version>
+    <bioformats.version>6.9.0-SNAPSHOT</bioformats.version>
   </properties>
 
   <dependencies>
