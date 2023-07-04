@@ -30,6 +30,11 @@ fi
 mvn clean package -Dfiji.home="$IJ_PATH"
 
 # Deploy the package
-export PATH="$IJ_PATH:$PATH"
-"$IJ_LAUNCHER" --update edit-update-site "$UPDATE_SITE" "$URL" "$LOGIN" "$DIR"
-"$IJ_LAUNCHER" --update upload-complete-site --force-shadow "$UPDATE_SITE"
+if [ -z ${SKIPDEPLOY+x} ];
+then
+    export PATH="$IJ_PATH:$PATH"
+    "$IJ_LAUNCHER" --update edit-update-site "$UPDATE_SITE" "$URL" "$LOGIN" "$DIR"
+    "$IJ_LAUNCHER" --update upload-complete-site --force-shadow "$UPDATE_SITE"
+else
+    echo "Skipping deploy..."
+fi
