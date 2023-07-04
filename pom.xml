@@ -92,5 +92,11 @@
       <name>Unidata Repository</name>
       <url>https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases</url>
     </repository>
+    <!-- to be removed with the bump to dev.zarr:jzarr -->
+    <repository>
+      <id>bc-nexus-repo</id>
+      <name>Brockmann-Consult Public Maven Repository</name>
+      <url>https://nexus.senbox.net/nexus/content/groups/public/</url>
+    </repository>
   </repositories>
 </project>
