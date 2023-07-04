@@ -3,6 +3,8 @@
 name: Maven
 
 on:
+  pull_request:
+
   push:
     branches:
       - master
@@ -19,7 +21,15 @@ jobs:
         with:
           java-version: 8
           distribution: 'zulu'
+
       - name: Deploy
         run: ./deploy.sh
         env:
           WIKI_UPLOAD_PASS: ${{ secrets.BF_WIKI_UPLOAD_PASS }}
+        if: github.event_name != 'pull_request'
+
+      - name: Test
+        run: ./deploy.sh
+        env:
+          SKIPDEPLOY: "true"
+        if: github.event_name == 'pull_request'
