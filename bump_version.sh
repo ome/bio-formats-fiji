@@ -1,7 +1,7 @@
 #!/bin/bash
 # 
 # This script bumps the version of the application and Bio-Formats
-# Specify the release version as a parameter. If 
+# Specify the release version as a parameter.
 # If the boolean ZARR is set to true, the version will be bumped to the
 # latest release of the OMEZarrReader
 # The script assumes that Maven and git are installed.
