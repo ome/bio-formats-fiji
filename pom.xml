@@ -42,7 +42,15 @@
               </includes>
             </fileset>
             <fileset>
-              <directory>${fiji.home}/jars/bio-formats</directory>
+              <directory>${fiji.home}/jars</directory>
+              <includes>
+                <include>formats-*</include>
+                <include>jxrlib-*</include>
+                <include>metakit-*</include>
+                <include>ome-*</include>
+                <include>specification-*</include>
+                <include>turbojpeg-*</include>
+              </includes>
             </fileset>
           </filesets>
         </configuration>
@@ -74,7 +82,7 @@
             <configuration>
               <includeGroupIds>ome,org.openmicroscopy</includeGroupIds>
               <excludeArtifactIds>bio-formats_plugins</excludeArtifactIds>
-              <outputDirectory>${fiji.home}/jars/bio-formats</outputDirectory>
+              <outputDirectory>${fiji.home}/jars</outputDirectory>
             </configuration>
           </execution>
         </executions>
