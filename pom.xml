@@ -11,7 +11,6 @@
   <properties>
     <fiji.home>Fiji.app</fiji.home>
     <bioformats.version>8.2.0</bioformats.version>
-    <omezarrreader.version>0.3.1</omezarrreader.version>
   </properties>
 
   <dependencies>
@@ -19,11 +18,6 @@
       <groupId>ome</groupId>
       <artifactId>bio-formats_plugins</artifactId>
       <version>${bioformats.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>ome</groupId>
-      <artifactId>OMEZarrReader</artifactId>
-      <version>${omezarrreader.version}</version>
     </dependency>
   </dependencies>
 
