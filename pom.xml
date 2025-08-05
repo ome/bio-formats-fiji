@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ome</groupId>
-  <version>8.3.0</version>
+  <version>8.4.0-SNAPHOT</version>
   <artifactId>dependency_copy</artifactId>
 
   <properties>
